@@ -1,12 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paquetes Turísticos</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description"
+      content="En AG Renta disponemos de camionetas para que viajes con los tuyos en completa seguridad y confort. Damos servicio a toda la república.">
+   <meta name="keywords" content="renta de camioneta, vacaciones, viajes económicos, ag renta">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+   <!-- Fuente -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+   <!-- Animaciones  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- style CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/estilos.css">
+   <!--  Iconos  -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+   <title>Bienvenidos a Ag Renta</title>
 </head>
+
 <body>
-    
+   <!--  ENCABEZADO  -->
+   <!--  NAV -->
+   <header class="main_menu home_menu">
+      <nav class="navbar navbar-expand-lg navbar-light"> 
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item animate__animated animate__pulse">
+                     <a class="nav-link active text-light" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="empresa.html">EMPRESA</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="unidades.html">UNIDADES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="clientes.html">CLIENTES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="paquetes.html">PAQUETES</a>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--  BANNER  -->
+   <main>
+      <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+               <img src="img/banner/banner_inicio_1.png" class="d-block w-100" alt="">
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="3000">
+               <img src="img/banner/banner_inicio_2.png" class="d-block w-100" alt="...">
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="3000">
+               <img src="img/banner/banner_inicio_3.png" class="d-block w-100" alt="...">
+            </div>
+
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+         </button>
+      </section>
+
+      <!--  TÍTULO  -->
+      <section class="about-info">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h1 class="about-title text-center"><span>AG Renta</span>, tu proveedor de renta de autobuses y
+                     camionetas.
+                  </h1>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!--  ACERCA Y UNIDADES  -->
+      <section class="about_part section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="section_tittle">
+                  <h2>Unidades <span> Disponibles</span></h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6 col-md-6" data-aos="zoom-out-right">
+                  <div class="about_img">
+                     <img src="img/empresa.png" alt="">
+                  </div>
+               </div>
+               <div class="offset-lg-1 col-lg-5 col-sm-8 col-md-6">
+                  <div class="about_text">
+                     <h2>Conoce nuestros <span> servicios y unidades</span> en renta para tus eventos.</h2>
+                     <p>Contamos con unidades de diferentes capacidades, desde un autobús de 44 plazas hasta una
+                        camioneta
+                        para grupos mas pequeños de 23 y 17 pasajeros.</p>
+                     <a class="btn_1" href="https://wa.me/525547214435/?text=Solicito%20%20cotización" target="_blank"
+                        data-aos="zoom-out-left"><img src="img/icon/logo-wasap.png" width="50" height="50"> Cotizar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--  SERVICIOS Y AMENIDADES  -->
+      <section class="service_part">
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-lg-12 col-xl-12">
+                  <div class="section_tittle">
+                     <h2><span>Nuestros</span> Servicios</h2>
+                  </div>
+                  <div class="service_part_iner">
+                     <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                           <div class="single_service_text" data-aos="fade-down">
+                              <img src="img/icon/aire.png" alt="aire acondicionado">
+                              <h4>Clima artificial</h4>
+                              <p>Nuestras unidades cuentan con aire acondicionado para hacer más placentero su viaje.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-right">
+                              <img src="img/icon/asientos.png" alt="asientos reclinables">
+                              <h4>Asientos reclinables</h4>
+                              <p>Nuestros autobuses y camionetas cuentan con asientos reclinables listos para que
+                                 disfrutes tu viaje.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-left">
+                              <img src="img/icon/cinturon_seguridad.png" alt="cinturon de seguridad">
+                              <h4>Cinturón de seguridad</h4>
+                              <p>Para tu tranquilidad, cada asiento cuenta con cinturon de seguridad. ¡Úsalo!</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-right">
+                              <img src="img/icon/pantalla.png" alt="pantalla plana">
+                              <h4>Pantalla plana</h4>
+                              <p>Disfruta películas en nuestras pantallas planas a color mientras te llevamos a tu
+                                 destino. </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-left">
+                              <img src="img/icon/seguro.png" alt="seguro de accidente">
+                              <h4>Seguro de accidente</h4>
+                              <p>Todas nuestras unidades cuentan con seguro en caso de accidente. ¡Viaja tranquilo,
+                                 viaja seguro!</p>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-right">
+                              <img src="img/icon/tacometro.png" alt="sensor de velocidad">
+                              <h4>Sensor de velocidad</h4>
+                              <p>Las unidades cuentan con sensor de velocidad para alerta al operador para limitarla a
+                                 la permitida.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="single_service_text" data-aos="fade-left">
+                              <img src="img/icon/volante.png" alt="volante">
+                              <h4>Operadores capacitados</h4>
+                              <p>Nuestros compañeros operadores son constantemente capacitados y evaluados.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                           <div class="single_service_text" data-aos="fade-up">
+                              <img src="img/icon/mantenimiento.png" alt="mantenimiento a unidades">
+                              <h4>Mantenimiento regular</h4>
+                              <p>Regularmente damos mantenimiento a nuestras unidades para evitar averías y accidentes
+                                 en carretera.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--ENLACES A BLOG-->
+      <section>
+         <div class="blog_part">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-lg-12 col-xl-12">
+                     <div class="blog_part_tittle">
+                        <h2>Visita nuestro<span> blog</span> </h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="container-fluid">
+               <div class="container pt-5">
+                  <div class="row row-cols-1 row-cols-md-4 g-6">
+
+                     <div class="col" data-aos="zoom-in-left">
+                        <div class="card h-100 shadow">
+                           <img src="img/blog/category3.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">¡Playas de Acapulco!</h5>
+                              <p class="card-text">En la Costera Miguel Alemán encontrarás todo para pasar un fin de
+                                 semana inolvidable, pues aquí se encuentran la mayoría de...</p>
+                              <a href="https://locuraviajes.com/las-10-mejores-playas-de-acapulco/"
+                                 class="btn btn-success  btn_1" target="_blank">Leer más...</a>
+                           </div>
+                           <div class="card-footer">
+                              <small class="text-muted"></small>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col">
+                        <div class="card h-100 shadow" data-aos="zoom-out">
+                           <img src="img/blog/category2.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Parque acuático El Rollo.</h5>
+                              <p class="card-text">Con un ambiente familiar y rodeado de naturaleza, en El Rollo podrás
+                                 pasar momentos llenos de diversión y adrenalina... </p>
+                              <a href="https://viajerom.com/morelos/parque-acuatico-el-rollo/"
+                                 class="btn btn-success btn_1" target="_blank">Leer más...</a>
+                           </div>
+                           <div class="card-footer">
+                              <small class="text-muted"></small>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col">
+                        <div class="card h-100 shadow" data-aos="zoom-out">
+                           <img src="img/blog/category4.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Pirámides de Teotihuacán</h5>
+                              <p class="card-text">México es un país fascinante. Zonas arqueológicas como la de
+                                 Teotihuacán o las impresionantes ciudades Mayas en la península...</p>
+                              <a href="https://oasishoteles.com/blog/visitando-la-ciudad-prehispanica-de-teotihuacan/"
+                                 class="btn btn-success btn_1" target="_blank">Leer más...</a>
+                           </div>
+                           <div class="card-footer">
+                              <small class="text-muted"></small>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col">
+                        <div class="card h-100 shadow" data-aos="zoom-in-right">
+                           <img src="img/blog/category1.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Pirámides de chichén itzá.</h5>
+                              <p class="card-text">La legendaria ciudad maya de Chichén Itzá, Patrimonio de la Humanidad
+                                 declarada por la UNESCO desde 1988 y Maravilla del...</p>
+                              <a href="https://www.chichenitza.com/es/blog/la-cultura-maya-en-chichen-itza"
+                                 class="btn btn-success btn_1" target="_blank">Leer más...</a>
+                           </div>
+                           <div class="card-footer">
+                              <small class="text-muted"></small>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+      </section>
+   </main>
+
+   <footer class="footer_part">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-lg-3">
+               <div class="single_footer_part text-center">
+                  <h4>Sígue nuestras redes sociales</h4>
+                  <p>Dale click a la red social de tu preferencia.</p>
+                  <div class="footer_icon social_icon">
+                     <ul class="list-unstyled text-center">
+                        <li><a href="https://www.facebook.com/RentaCamionetasyAutobusesAutobusya" target="_blank"
+                              class="bi bi-facebook"></a></li>
+                        <li><a href="https://twitter.com/camionetascdmx" target="_blank" class="bi bi-twitter"></a></li>
+                        <li><a href="https://www.instagram.com/wondervanmx/?hl=es" target="_blank"
+                              class="bi bi-instagram"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+               <div class="single_footer_part text-center">
+                  <h4>Nuestros datos:</h4>
+                  <p>Dirección : CDMX CP 01270 Álvaro Obregón.</p>
+                  <p><a href="tel:+525547214435">Teléfono : Click para llamar</a></p>
+                  <p><a href="mailto:sammomx@gmail.com?subject=Questions&body=Solicito información por favor. ">Correo:
+                        Enviar mensaje.</a></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+               <div class="single_footer_part text-center">
+                  <h4>Mapa del sitio</h4>
+                  <ul class="list-unstyled">
+                     <li class="nav-item animate__animated animate__pulse">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="empresa.html">Empresa</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="unidades.html">Unidades</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+               <div class="single_footer_part text-center">
+                  <h4>Nuestro boletín</h4>
+                  <p>Suscríbete a nuestra lista de correo y entérate antes que nadie de las promociones en la
+                     contratación de tu autobús o camioneta.</p>
+                  <div id="mc_embed_signup">
+                     <form target="_blank" method="get" class="subscribe_form relative mail_part" required>
+
+                        <input type="email" name="email" id="newsletter-form-email" placeholder="Correo electrónico"
+                           class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = ' Email Address '" required="" type="email">
+                        <button type="submit" name="submit" id="newsletter-submit"
+                           class="email_icon newsletter-submit button-contactForm"><i
+                              class="far fa-paper-plane"></i></button>
+                        <div class="mt-10 info"></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="copyright_text text-center">
+                  <p>
+                     Copyright &copy;<script>
+                        document.write(new Date().getFullYear());
+                     </script> Samuel García
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Optional JavaScript; choose one of the two! -->
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 1000,
+         once: true
+      });
+   </script>
 </body>
+
 </html>
