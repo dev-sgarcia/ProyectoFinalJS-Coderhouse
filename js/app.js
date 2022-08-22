@@ -85,7 +85,7 @@ cargapaquetes ()
 
 
 
-const agregarAlCarrito = (prodId) => {
+const agregarAlCarrito = (pqtId) => {
                                                
     Toastify({
 
@@ -98,17 +98,17 @@ const agregarAlCarrito = (prodId) => {
         }).showToast();
 
   
-    const existe = carrito.some (prod => prod.id === prodId) //comprobar si el elemento ya existe en el carro
+    const existe = carrito.some (pqt => pqt.id === pqtId) //comprobar si el elemento ya existe en el carro
 
     if (existe){ 
-        const prod = carrito.map (prod => { 
-            if (prod.id === prodId){
-                prod.cantidad++
+        const pqt = carrito.map (pqt => { 
+            if (pqt.id === pqtId){
+                pqt.cantidad++
             }
            
         })
     } else { 
-        const item = datapaquetes.find((prod) => prod.id === prodId)
+        const item = datapaquetes.find((pqt) => pqt.id === pqtId)
         carrito.push(item)
     }
    actualizarCarrito() 
@@ -117,8 +117,8 @@ const agregarAlCarrito = (prodId) => {
 
 
 
-const eliminarDelCarrito = (prodId) => {
-    const item = carrito.find((prod) => prod.id === prodId)
+const eliminarDelCarrito = (pqtId) => {
+    const item = carrito.find((pqt) => pqt.id === pqtId)
     const indice = carrito.indexOf(item) 
     carrito.splice(indice, 1) 
 
@@ -134,22 +134,22 @@ const eliminarDelCarrito = (prodId) => {
 const actualizarCarrito = () => {
    
     contenedorCarrito.innerHTML = "" 
-    carrito.forEach((prod) => {
+    carrito.forEach((pqt) => {
         const div = document.createElement('div')
         div.className = ('paqueteEnCarrito')
 
         div.innerHTML = `
-        <p>${prod.nombre}</p>
-        <img class="cardimg2"  src=${prod.img} alt= "">
-        <p>Precio:$${prod.precio}</p>
-        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        <p>${pqt.nombre}</p>
+        <img class="cardimg2"  src=${pqt.img} alt= "">
+        <p>Precio:$${pqt.precio}</p>
+        <p>Cantidad: <span id="cantidad">${pqt.cantidad}</span></p>
+        <button onclick="eliminarDelCarrito(${pqt.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
         contenedorCarrito.appendChild(div)
 
     })  
     contadorCarrito.innerText = carrito.length    
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    precioTotal.innerText = carrito.reduce((acc, pqt) => acc + pqt.cantidad * pqt.precio, 0)
     guardarCarritoStorage(carrito);       
 }
 
